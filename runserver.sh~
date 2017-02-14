@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo "{\"endpoint\": \"$ENDPOINT\"}" > endpoint.json
+
+python start.py
+python -m SimpleHTTPServer
+

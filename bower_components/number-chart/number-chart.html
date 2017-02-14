@@ -200,6 +200,7 @@
                 }
               }).then(function (resp) {
                 numberMax = resp.hits.total;
+		Console.log(numberMax)
                 var num = resp.hits.total > 999 ? (resp.hits.total/1000).toFixed(1) + 'k' : resp.hits.total
                 idNum.innerHTML = num;
                 idBar.style.width = "100%";

@@ -16,7 +16,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
   <meta name="generator" content="Polymer Starter Kit" />
-  <title>Sefarad 3.0</title>
+  <title>Sefarad 4.0</title>
   <!-- Place favicon.ico in the `app/` directory -->
 
   <!-- Chrome for Android theme color -->
@@ -43,7 +43,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <!-- D3.js for drawing charts -->
   <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-  
+  <script src="bower_components/web-animations-js/web-animations.min.js"></script>
+
   <!-- Tile icon for Win8 (144x144) -->
   <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
 
@@ -112,6 +113,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <a data-route="dashftt" href="/dashftt">
             <iron-icon icon="face"></iron-icon>
             <span>Dashboard FTT</span>
+          </a>
+
+	<!--Gsi Crawler-->
+	  <a data-route="gsicrawler" href="/gsicrawler">
+            <iron-icon icon="visibility"></iron-icon>
+            <span>GSI Crawler</span>
           </a>
 
           <a data-route="admin" href="/admin">
@@ -189,10 +196,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <dashboard-slovakia></dashboard-slovakia>
             </section>
 
-            <section data-route="admin">
-              <admin-console></admin-console>
+            <section data-route="gsicrawler">
+              <gsicrawler-greeting></gsicrawler-greeting>
             </section>
 
+	    <section data-route="admin">
+              <admin-console></admin-console>
+            </section>
             <section data-route="help">
               <help-panel></help-panel>
             </section>
