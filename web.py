@@ -147,5 +147,29 @@ def retrieve_info():
 def server_static(filepath):
 	return static_file(filepath, root='')
 
+@route('/dbpedia')
+def dbpedia():
+	return static_file('/dashboards/dbpedia.html', root='')
+
+@route('/absa')
+def absa():
+	return static_file('/dashboards/absa.html', root='')
+
+@route('/dashftt')
+def dashftt():
+	return static_file('/dashboards/dashftt.html', root='')
+
+@route('/footballmood')
+def footballmood():
+	return static_file('/dashboards/footballmood.html', root='')
+
+@route('/gsicrawler')
+def gsicrawler():
+	return static_file('/dashboards/gsicrawler.html', root='')
+
+@route('/tourpedia')
+def tourpedia():
+	return static_file('/dashboards/tourpedia.html', root='')
+
 #run(reloader=True)
 run(host='0.0.0.0', port=8080, debug=True)

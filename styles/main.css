@@ -16,3 +16,10 @@ body {
 ::-webkit-scrollbar { 
     display: none; 
 }
+
+text.tweet-details{display: none;}
+
+.cara:hover + text.tweet-details{
+
+	display: block;
+}
